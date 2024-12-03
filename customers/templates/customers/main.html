@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock title %}
+
+
+
+{% block content %}
+<div class='p-4 w-50 mx-auto'>
+
+    {% for c in object_list %}
+    {{c}}
+    <a href="{% url 'customers:customer-pdf-view' pk=c.pk %}"><button class='btn btn-primary'>pdf</button></a>
+    <br>
+    <hr/>
+    {% endfor %}
+</div>
+
+{% endblock content %}
+

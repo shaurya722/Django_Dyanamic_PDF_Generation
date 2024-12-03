@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>PDF Test</title>
+</head>
+<body>
+    {{customer}}
+    <br>
+    <hr/>
+    {{customer.description | linebreaks}}
+    <br>
+    <br>
+    {{customer.logo}}
+    <br>
+    <br>
+    {{customer.logo.url}}
+    <br>
+    <br>
+    {{customer.logo.path}}
+    <br>
+    <br>
+    <img src={{customer.logo.path}} height='200px'>
+</body>
+</html>
